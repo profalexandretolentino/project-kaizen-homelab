@@ -10,25 +10,17 @@
 
 This document defines the planned evolution of Project Kaizen.
 
-It contains only future phases, milestones and deliverables. The current technical state is documented in [ARCHITECTURE.md](ARCHITECTURE.md), while completed work and release history belong to [CHANGELOG.md](CHANGELOG.md).
+It contains only future phases, milestones and deliverables. The current technical state is documented in ARCHITECTURE.md, while completed work and release history belong to CHANGELOG.md.
 
 ## Roadmap Principles
 
 - The Roadmap contains planned work only.
-- Completed phases and releases are removed from this document and recorded in [CHANGELOG.md](CHANGELOG.md).
-- Architectural state resulting from completed work is reflected in [ARCHITECTURE.md](ARCHITECTURE.md).
+- Completed phases and releases are removed from this document and recorded in CHANGELOG.md.
+- Architectural state resulting from completed work is reflected in ARCHITECTURE.md.
 - Phase numbers are preserved to maintain continuity with the established project sequence.
 - No phase has a fixed date unless one is formally defined.
 
 ## Planned Phases
-
-### Phase 3 — Backup
-
-Planned deliverables:
-
-- Backup strategy
-- Restore procedures
-- Backup automation
 
 ### Phase 4 — Monitoring and Observability
 
@@ -73,9 +65,9 @@ Release:
 A phase is complete when:
 
 - its listed deliverables have been implemented;
-- the documentation required by [CONSTITUTION.md](CONSTITUTION.md) is complete;
-- the resulting technical state is reflected in [ARCHITECTURE.md](ARCHITECTURE.md), when applicable;
-- its completion is recorded in [CHANGELOG.md](CHANGELOG.md).
+- the documentation required by CONSTITUTION.md is complete;
+- the resulting technical state is reflected in ARCHITECTURE.md, when applicable;
+- its completion is recorded in CHANGELOG.md.
 
 ---
 
@@ -85,25 +77,17 @@ A phase is complete when:
 
 Este documento define a evolução planejada do Project Kaizen.
 
-Ele contém somente fases, marcos e entregas futuras. O estado técnico atual está documentado em [ARCHITECTURE.md](ARCHITECTURE.md), enquanto o trabalho concluído e o histórico de releases pertencem ao [CHANGELOG.md](CHANGELOG.md).
+Ele contém somente fases, marcos e entregas futuras. O estado técnico atual está documentado em ARCHITECTURE.md, enquanto o trabalho concluído e o histórico de releases pertencem ao CHANGELOG.md.
 
 ## Princípios do Roadmap
 
 - O Roadmap contém somente trabalho planejado.
-- Fases e releases concluídas são removidas deste documento e registradas no [CHANGELOG.md](CHANGELOG.md).
-- O estado arquitetural resultante do trabalho concluído é refletido no [ARCHITECTURE.md](ARCHITECTURE.md).
+- Fases e releases concluídas são removidas deste documento e registradas no CHANGELOG.md.
+- O estado arquitetural resultante do trabalho concluído é refletido no ARCHITECTURE.md.
 - A numeração das fases é preservada para manter a continuidade com a sequência estabelecida do projeto.
 - Nenhuma fase possui data fixa, exceto quando uma data for formalmente definida.
 
 ## Fases Planejadas
-
-### Fase 3 — Backup
-
-Entregas planejadas:
-
-- Estratégia de backup
-- Procedimentos de restauração
-- Automação de backup
 
 ### Fase 4 — Monitoramento e Observabilidade
 
@@ -148,6 +132,6 @@ Release:
 Uma fase está concluída quando:
 
 - suas entregas listadas foram implementadas;
-- a documentação exigida pelo [CONSTITUTION.md](CONSTITUTION.md) está completa;
-- o estado técnico resultante está refletido no [ARCHITECTURE.md](ARCHITECTURE.md), quando aplicável;
-- sua conclusão está registrada no [CHANGELOG.md](CHANGELOG.md).
+- a documentação exigida pelo CONSTITUTION.md está completa;
+- o estado técnico resultante está refletido no ARCHITECTURE.md, quando aplicável;
+- sua conclusão está registrada no CHANGELOG.md.

@@ -14,9 +14,49 @@ The project follows incremental development through engineering Sprints.
 
 ### Planned
 
-- Sprint 3 — Backup strategy
-- Restore procedures
-- Backup automation
+- Future infrastructure evolution
+- Additional homelab services
+- Extended backup capabilities
+
+---
+
+## [0.2.0] — 2026-08-03
+
+### Added
+
+#### Backup Foundation
+
+- Initial backup strategy for Project Kaizen Homelab
+- Configuration backup dataset organization
+- Backup metadata generation
+- Backup manifest generation
+- Automated configuration backup script
+- Restore procedure documentation
+
+#### Backup Coverage
+
+- Ubuntu Server installation configuration backup
+- Docker environment metadata backup
+- Portainer configuration metadata backup
+- Samba configuration backup
+
+#### Validation
+
+- Backup archive generation validated
+- Backup integrity validation implemented
+- Restore test successfully completed
+
+### Changed
+
+- Backup process evolved from manual execution to automated workflow
+- Backup structure organized by infrastructure responsibility
+- Backup scope defined to protect configuration data only
+
+### Engineering Milestones
+
+- Sprint S03 — Backup foundation
+
+---
 
 ## [0.1.0] — 2026-07-30
 
@@ -80,9 +120,49 @@ O projeto segue desenvolvimento incremental por meio de Sprints de engenharia.
 
 ### Planejado
 
-- Sprint 3 — Estratégia de backup
-- Procedimentos de restauração
-- Automação de backup
+- Evolução futura da infraestrutura
+- Novos serviços do homelab
+- Capacidades adicionais de backup
+
+---
+
+## [0.2.0] — 2026-08-03
+
+### Adicionado
+
+#### Fundação do Backup
+
+- Estratégia inicial de backup do Project Kaizen Homelab
+- Organização do dataset de backup de configuração
+- Geração de metadados do backup
+- Geração automática do manifesto de arquivos
+- Script automatizado de backup de configuração
+- Documentação do procedimento de restauração
+
+#### Cobertura do Backup
+
+- Backup da configuração de instalação do Ubuntu Server
+- Backup dos metadados do ambiente Docker
+- Backup dos metadados de configuração do Portainer
+- Backup da configuração do Samba
+
+#### Validação
+
+- Geração do arquivo de backup validada
+- Validação de integridade do backup implementada
+- Teste de restauração concluído com sucesso
+
+### Alterado
+
+- O processo de backup evoluiu de execução manual para fluxo automatizado
+- A estrutura do backup foi organizada por responsabilidade da infraestrutura
+- O escopo do backup foi definido para proteção de dados de configuração
+
+### Marcos de Engenharia
+
+- Sprint S03 — Fundação do backup
+
+---
 
 ## [0.1.0] — 2026-07-30
 
