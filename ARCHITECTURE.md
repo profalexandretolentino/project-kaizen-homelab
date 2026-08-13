@@ -4,7 +4,7 @@
 
 ---
 
-# English
+it# English
 
 ## Purpose
 
@@ -22,6 +22,7 @@ The architecture covers:
 - the container platform;
 - container management;
 - confirmed supporting services;
+- the observability layer;
 - the repository and its current documentation structure.
 
 Planned technologies and components are not part of the current architecture until they are implemented and incorporated into the repository state.
@@ -40,6 +41,10 @@ flowchart TD
     B --> C[Ubuntu Server LTS]
     C --> D[Docker]
     D --> E[Containerized Services]
+    D --> G[Monitoring Stack]
+    G --> H[Prometheus]
+    G --> I[Node Exporter]
+    G --> J[Grafana]
     F[Portainer] -->|Manages| D
 ```
 
@@ -85,6 +90,26 @@ Containerized services represent the workloads executed by Docker.
 
 Only services confirmed in the repository belong to the current architecture.
 
+## 7. Observability Layer
+
+**Component:** Monitoring Stack
+
+The observability layer provides operational visibility for the infrastructure environment.
+
+Confirmed components:
+
+- Prometheus;
+- Node Exporter;
+- Grafana.
+
+Prometheus collects and stores infrastructure metrics.
+
+Node Exporter provides Linux host metrics.
+
+Grafana provides dashboards and visualization of monitoring data.
+
+The monitoring stack is deployed using Docker Compose and operates through a dedicated Docker network.
+
 ## Confirmed Supporting Components
 
 ### Tailscale
@@ -114,7 +139,13 @@ Project-Kaizen/
 ├── ARCHITECTURE.md
 ├── ROADMAP.md
 ├── CHANGELOG.md
-└── LEGACY.md
+├── LEGACY.md
+├── docs/
+│   ├── operations/
+│   ├── architecture/
+│   └── adr/
+├── infrastructure/
+└── scripts/
 ```
 
 Directories for detailed documentation, infrastructure, services and automation will be incorporated into the architecture only when they contain real versioned assets.
@@ -215,6 +246,7 @@ A arquitetura abrange:
 - a plataforma de containers;
 - o gerenciamento de containers;
 - os serviços de apoio confirmados;
+- a camada de observabilidade;
 - o repositório e sua estrutura documental atual.
 
 Tecnologias e componentes planejados não fazem parte da arquitetura atual até que sejam implementados e incorporados ao estado do repositório.
@@ -233,6 +265,10 @@ flowchart TD
     B --> C[Ubuntu Server LTS]
     C --> D[Docker]
     D --> E[Serviços em Containers]
+    D --> G[Stack de Monitoramento]
+    G --> H[Prometheus]
+    G --> I[Node Exporter]
+    G --> J[Grafana]
     F[Portainer] -->|Gerencia| D
 ```
 
@@ -278,6 +314,26 @@ Os serviços em containers representam as cargas de trabalho executadas pelo Doc
 
 Somente serviços confirmados no repositório pertencem à arquitetura atual.
 
+## 7. Camada de Observabilidade
+
+**Componente:** Stack de Monitoramento
+
+A camada de observabilidade fornece visibilidade operacional sobre o ambiente de infraestrutura.
+
+Componentes confirmados:
+
+- Prometheus;
+- Node Exporter;
+- Grafana.
+
+O Prometheus coleta e armazena métricas da infraestrutura.
+
+O Node Exporter fornece métricas do host Linux.
+
+O Grafana fornece dashboards e visualização dos dados de monitoramento.
+
+A stack de monitoramento é implantada utilizando Docker Compose e opera através de uma rede Docker dedicada.
+
 ## Componentes de Apoio Confirmados
 
 ### Tailscale
@@ -307,7 +363,13 @@ Project-Kaizen/
 ├── ARCHITECTURE.md
 ├── ROADMAP.md
 ├── CHANGELOG.md
-└── LEGACY.md
+├── LEGACY.md
+├── docs/
+│   ├── operations/
+│   ├── architecture/
+│   └── adr/
+├── infrastructure/
+└── scripts/
 ```
 
 Diretórios de documentação detalhada, infraestrutura, serviços e automação serão incorporados à arquitetura somente quando possuírem ativos reais versionados.

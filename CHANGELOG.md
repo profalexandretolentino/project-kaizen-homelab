@@ -1,5 +1,3 @@
-# Changelog
-
 [English](#english) | [Português](#português)
 
 ---
@@ -17,6 +15,52 @@ The project follows incremental development through engineering Sprints.
 - Future infrastructure evolution
 - Additional homelab services
 - Extended backup capabilities
+
+---
+
+## [0.3.0] — 2026-08-11
+
+### Added
+
+#### Monitoring Foundation
+
+- Initial observability foundation for Project Kaizen Homelab
+- Prometheus monitoring service
+- Node Exporter infrastructure metrics collection
+- Grafana dashboard visualization
+- Dedicated Docker monitoring network
+- Docker Compose monitoring deployment
+
+#### Monitoring Documentation
+
+- Monitoring stack operational documentation
+- Time synchronization troubleshooting documentation
+- Observability architecture documentation
+- ADR-004 documenting the monitoring stack decision
+
+### Changed
+
+- Project architecture expanded with the Observability Layer
+- Repository structure evolved to include operational documentation, architecture documentation and automation directories
+- Infrastructure visibility evolved from service availability to metric-based monitoring
+
+### Validation
+
+- Prometheus health endpoint validated
+- Prometheus targets validated
+- Node Exporter metrics endpoint validated
+- Grafana datasource connection validated
+- Monitoring dashboard successfully displaying infrastructure metrics
+
+### Operational Improvements
+
+- System time synchronization issue identified during validation
+- Root cause analyzed and resolved using Chrony NTP service
+- Monitoring reliability improved through correct timestamp synchronization
+
+### Engineering Milestones
+
+- Sprint S04 — Monitoring Foundation
 
 ---
 
@@ -107,6 +151,8 @@ The project follows incremental development through engineering Sprints.
 - Sprint S00 — Project foundation
 - Sprint S01 — Documentation foundation
 - Sprint S02 — Storage service and remote-access foundation
+- Sprint S03 — Backup foundation
+- Sprint S04 — Monitoring Foundation
 
 ---
 
@@ -123,6 +169,52 @@ O projeto segue desenvolvimento incremental por meio de Sprints de engenharia.
 - Evolução futura da infraestrutura
 - Novos serviços do homelab
 - Capacidades adicionais de backup
+
+---
+
+## [0.3.0] — 2026-08-11
+
+### Adicionado
+
+#### Fundação do Monitoramento
+
+- Fundação inicial de observabilidade do Project Kaizen Homelab
+- Serviço de monitoramento Prometheus
+- Coleta de métricas da infraestrutura com Node Exporter
+- Visualização de dashboards com Grafana
+- Rede Docker dedicada para monitoramento
+- Implantação da stack de monitoramento utilizando Docker Compose
+
+#### Documentação de Monitoramento
+
+- Documentação operacional da stack de monitoramento
+- Documentação de troubleshooting de sincronização de horário
+- Documentação da arquitetura de observabilidade
+- ADR-004 documentando a decisão da stack de monitoramento
+
+### Alterado
+
+- A arquitetura do projeto foi expandida com a Camada de Observabilidade
+- A estrutura do repositório evoluiu para incluir documentação operacional, documentação arquitetural e diretórios de automação
+- A visibilidade da infraestrutura evoluiu de disponibilidade de serviços para monitoramento baseado em métricas
+
+### Validação
+
+- Endpoint de saúde do Prometheus validado
+- Targets do Prometheus validados
+- Endpoint de métricas do Node Exporter validado
+- Conexão do datasource Grafana validada
+- Dashboard de monitoramento exibindo métricas da infraestrutura com sucesso
+
+### Melhorias Operacionais
+
+- Problema de sincronização de horário identificado durante a validação
+- Causa raiz analisada e resolvida utilizando o serviço Chrony NTP
+- Confiabilidade do monitoramento aprimorada através da sincronização correta dos timestamps
+
+### Marcos de Engenharia
+
+- Sprint S04 — Fundação do Monitoramento
 
 ---
 
@@ -213,3 +305,5 @@ O projeto segue desenvolvimento incremental por meio de Sprints de engenharia.
 - Sprint S00 — Fundação do projeto
 - Sprint S01 — Fundação documental
 - Sprint S02 — Serviço de armazenamento e fundação do acesso remoto
+- Sprint S03 — Fundação do backup
+- Sprint S04 — Fundação do Monitoramento
